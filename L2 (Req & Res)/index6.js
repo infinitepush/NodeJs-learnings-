@@ -18,18 +18,17 @@ const server = http.createServer((req, res) => {
     res.write('<label for="male">Male</label>');
     res.write('<input type="radio" id="female" name="gender" value="female">');
     res.write('<label for="female">Female</label><br><br>');
-
     res.write('<button type="submit">Submit</button>');
     res.write('</form>');
     res.write('</body>');
     res.write('</html>')
     return res.end();
-  } else if(req.method === 'POST' && req.url.startsWith('/upload-details')) {
+  } else if(req.method === "POST" && req.url.startsWith("/upload-details")) {
       //this method === POST to check if someone redirected without submitting the form
     console.log("POST /upload-details triggered");
     fs.writeFileSync('user.txt', 'Piyush Tiwari');
     res.statusCode = 302;
-    res.setHeader('Location','/');
+    res.setHeader('Location','/'); //we directed the user to homepage after taking response from him
     return res.end();
 }
   {
