@@ -2,6 +2,7 @@
 
 const fs = require('fs');
 
+
 const reqHandler = ((req, res) => {  // yeh jo ham log function pass kar rhe the create server ko yeh ham log alag se nikal diye 
   if (req.url === '/') {
     res.setHeader('Content-Type', 'text/html');
