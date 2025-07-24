@@ -1,0 +1,16 @@
+{
+  "name": "practiceque",
+  "version": "1.0.0",
+  "description": "using express and creating a new project",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "app1.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app1.js"
+  },
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
