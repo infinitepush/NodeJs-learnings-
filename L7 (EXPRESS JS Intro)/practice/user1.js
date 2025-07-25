@@ -41,7 +41,7 @@ app1.post('/contact-us',(req, res, next) => {
     console.log('Name:', name);
     console.log('Email:', email);
     res.send('<h1>Thank you for contacting us!</h1><p>We have received your submission.</p>');
-});
+}); // these post handling can be done by using body parser also we will learn it in next chapter
 
 
 module.exports= app1;
