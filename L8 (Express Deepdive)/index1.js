@@ -8,5 +8,5 @@
 // and the code we will write to link is : const userRouter = express.Router();
 // so basically we just create different routers in which we store different modules and then import them in our app.js file
 
-//8.3: Adding 404 error: 
+//8.3: Adding 404 error: though 404 error is inbuilt by express.js but here we will add our own unqiue 404 error, along with correct status code, check in the codes it's already there
 
