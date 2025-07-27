@@ -11,7 +11,7 @@ hostRouter.get("/add-home",(req, res, next)=> {
     placeholder= "Enter the name of your house" />
     <input type = "submit" /></form>
     <a href = "/"> Homepage</a>  
-  `);
+  `)
 });
 
 hostRouter.post("/add-home",(req, res, next)=> {
