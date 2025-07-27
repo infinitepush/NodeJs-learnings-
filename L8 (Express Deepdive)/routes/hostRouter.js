@@ -14,7 +14,6 @@ hostRouter.get("/add-home",(req, res, next)=> {
   `);
 });
 
-
 hostRouter.post("/add-home",(req, res, next)=> {
   console.log(req.body);
   res.send(`<h1> Your Home was succesfully added.</h1>
