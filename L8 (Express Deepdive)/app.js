@@ -11,7 +11,7 @@ const app = express(); //calling the express function
 app.use(express.urlencoded()); // this will show the details entered
 
 app.use(userRouter); //this module contains user routings
-app.use(hostRouter); //this module contains host routings
+app.use("/host",hostRouter); //this module contains host routings
 
 app.use((req, res, next) => {
   res.status  (404).send("<h1> 404 Your page is not found in the airbnb!</h1>");

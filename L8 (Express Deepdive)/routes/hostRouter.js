@@ -6,11 +6,11 @@ const hostRouter = express.Router();
 hostRouter.get("/add-home",(req, res, next)=> {
   res.send(`<h1> Welcome to the home section of airbnb </h1>
     <h3> Register your home here</h3>
-    <form action = "/add-home" method = "POST">
+    <form action = "/host/add-home" method = "POST">
     <input type = "text" name = "houseName"
     placeholder= "Enter the name of your house" />
     <input type = "submit" /></form>
-    <a href = "/"> Homepage</a>  
+    <a href = "/"> Homepage</a>
   `);
 });
 

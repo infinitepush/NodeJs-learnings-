@@ -10,3 +10,4 @@
 
 //8.3: Adding 404 error: though 404 error is inbuilt by express.js but here we will add our own unqiue 404 error, along with correct status code, check in the codes it's already there
 
+//8.4: common paths: we can also assign paths based on the common paths we will give, like in our airbnb case /host is the common path for doing all the hosting work in airbnb.. so we can assign any path after /host so that every url using /host will be acted by the common path.. In app.use we can give common path and then we can use it while hosting look at the program app.js and hostRouter , In app.js we can give path (/host in our case) in app.use, the thing is that it will be a good practice to track and avoid error in router handling
