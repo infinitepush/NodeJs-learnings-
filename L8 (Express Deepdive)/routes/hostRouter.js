@@ -18,7 +18,7 @@ hostRouter.post("/add-home",(req, res, next)=> {
   console.log(req.body);
   res.send(`<h1> Your Home was succesfully added.</h1>
     <a href = "/"> Homepage</a>  
-  `);
+  `)
 });
 
 module.exports = hostRouter;
