@@ -1,11 +1,12 @@
+//core modules
+const path = require('path');
 // this will handle  user router
-const express = require('express');
+//external modules
+const express = require('express'); 
 const userRouter = express.Router();
 
 userRouter.get("/",(req, res, next)=> {
-  res.send(`<h1> Welcome to the airbnb!</h1> 
-    <a href = "/host/add-home"> Add Home</a> 
-  `);
+  res.sendFile(path.join(__dirname, "../", "views", "home.html")); //this is a path we need to give it according to our folder idea ../ is for going out of the folder 
 });
 
 module.exports = userRouter;

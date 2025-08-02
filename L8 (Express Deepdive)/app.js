@@ -1,3 +1,4 @@
+const path = require('path');
 //External Module 
 const express = require('express');  //importing the express module
 // while doin the route handling we are importing our local module
@@ -14,12 +15,12 @@ app.use(userRouter); //this module contains user routings
 app.use("/host",hostRouter); //this module contains host routings
 
 app.use((req, res, next) => {
-  res.status  (404).send("<h1> 404 Your page is not found in the airbnb!</h1>");
+  res.status  (404).sendFile(path.join(__dirname, "views", "404page.html")); 
 });
 
 const PORT = 3000;
 app.listen(PORT, () =>{
-  console.log(`Server running on address https://localhost:${PORT}`);
+  console.log(`Server running on address http://localhost:${PORT}`);
 });
   // It's a good idea to seperate the user pages and the admin pages 
   
