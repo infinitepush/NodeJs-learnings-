@@ -15,3 +15,6 @@
 //8.5 Adding HTML files: See it's not at all advisable to write html codes here in .js folder so just like we created a route folder for managing routes paths, in the same way we can create a 'views' folder where we will store our html codes. Here we can write html codes for home page, add home page, response page etc to make things organize
 
 //8.6: Serving HTML Files: Here we will deal after the creation of html fiesl, how we are going to use them in our codes, so we will use our another core module that is path.. and also after defining it we must send path correctly see codes dhyan se dekhna pehle back kiye phir views me gye and then phir uss html file me
+
+//8.7: Using FIle Helper: Previously in serving html files we were using relative path but we can also use absolute path to correctly provide the path. Like in app.js i didn't use ../ also in future if i do any changes then i have to change the entire path again so to avoid all these chaos we will use absolute path to located our html files in our routes & files.
+// so we will create a folder named as util which will store our absolute path and we will give that util path to rest of the files 

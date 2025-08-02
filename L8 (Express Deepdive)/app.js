@@ -1,4 +1,4 @@
-const path = require('path');
+const path = require('path'); // local module for relative path
 //External Module 
 const express = require('express');  //importing the express module
 // while doin the route handling we are importing our local module
@@ -14,8 +14,10 @@ app.use(express.urlencoded()); // this will show the details entered
 app.use(userRouter); //this module contains user routings
 app.use("/host",hostRouter); //this module contains host routings
 
+const rootDir = require("./utils/pathUtils") //local module for absolute path
+
 app.use((req, res, next) => {
-  res.status  (404).sendFile(path.join(__dirname, "views", "404page.html")); 
+  res.status  (404).sendFile(path.join(rootDir, "views", "404page.html")); 
 });
 
 const PORT = 3000;
