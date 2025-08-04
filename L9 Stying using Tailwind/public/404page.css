@@ -1,0 +1,25 @@
+/* 404.css */
+
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background-color: #fff5f5;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+header {
+  padding: 40px 20px;
+}
+
+h1 {
+  font-size: 2rem;
+  color: #ff5a5f;
+  margin: 0;
+}
