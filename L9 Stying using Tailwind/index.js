@@ -9,4 +9,4 @@
 //9.5: Including/Installing Tailwindcss: npm i -D tailwindcss@3 postcss autoprefixer
 //                            npx tailwindcss init           --> This is for intialising tailwind css config
 // installing tailwind is annoying but  anyways.. we need to create a css file inside views folder and inside that provide 3 css commands..loook for notes there are other things there 
-// tailwindcss is nothing just you doing a type of inline css not exactly inline, as tailwind will create an another css file automatic and will will update it as you keep writing the code
+// tailwindcss is nothing just you doing a type of inline css not exactly inline, as tailwind will create an another css file automatic and will will update it as you keep writing the code.
