@@ -3,9 +3,12 @@ const path = require('path'); //
 const express = require('express'); 
 
 const userRouter = require("./routes/userRouter");
-const {hostRouter} = require('./routes/hostRouter'); //we need to use destructor here 
+const {hostRouter} = require('./routes/hostRouter'); 
 
 const app = express(); 
+
+ app.set ('view engine', 'ejs'); //we just informed express that we are using ejs template engine
+ app.set ('views', 'views');
 
 
 app.use(express.urlencoded());

@@ -7,3 +7,14 @@
 //summary: we just created an array that will display houseNames and in post function we push the houseNames into that array  and then exported them in different manner so that multiples values can be displayed and then use destructor {} in hostRouter so that it can take multiple values. 
 // then we went to userRouter where we made the registered Home variable acccessible there
 // but still it will show the same houses to everyone on local host and to solve that problem EJS comes into action..
+
+//10.3 What is EJS: EJS let you embed js with html, refer notes
+//10.4 Installins EJS: Since it's a package we need tp install it 
+// npm install --save ejs 
+// also we also need to tell express that we are using ejs templating engine for that we use 
+// const app = express();
+// app.set ('view engine', 'ejs');
+// app.set ('views', 'views');
+// this was all about installing now we will see how to use ejs function...
+
+//10.5 Using EJS templates 

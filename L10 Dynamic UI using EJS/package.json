@@ -19,6 +19,7 @@
     "depd": "^2.0.0",
     "dunder-proto": "^1.0.1",
     "ee-first": "^1.1.1",
+    "ejs": "^3.1.10",
     "electron-to-chromium": "^1.5.194",
     "encodeurl": "^2.0.0",
     "es-define-property": "^1.0.1",
@@ -90,8 +91,8 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "tailwind" : "tailwindcss -i ./views/input.css -o ./public/output.css --watch",
-    "start": "nodemon app.js & npm run tailwind" 
+    "tailwind": "tailwindcss -i ./views/input.css -o ./public/output.css --watch",
+    "start": "nodemon app.js & npm run tailwind"
   },
   "keywords": [],
   "author": "",
