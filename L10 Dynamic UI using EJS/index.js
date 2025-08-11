@@ -17,4 +17,4 @@
 // app.set ('views', 'views');
 // this was all about installing now we will see how to use ejs function...
 
-//10.5 Using EJS templates: 
+//10.5 Using EJS templates
